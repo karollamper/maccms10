@@ -1,5 +1,5 @@
-deployment:
-  - name: applecms
-    type: docker
-    configVars:
-      - PORT: 80
+services:
+  app:
+    image: dockerfile:./Dockerfile  
+    ports:
+      - 80  
